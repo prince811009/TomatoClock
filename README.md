@@ -1,4 +1,4 @@
-# w1-tomato-clock
+# Week1-TomatoClock
 
 ## Project setup
 ```
