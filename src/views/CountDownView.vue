@@ -8,7 +8,7 @@
       </div>
       <p v-else>新增一個 TODO 吧 !</p>
       <div class="bottom">
-        <div v-if="todoQueue.length > 1">
+        <div v-if="todoQueue.length > 0">
           <todo-list :todoList="todoQueue" />
         </div>
       </div>
@@ -66,7 +66,7 @@ export default {
       return null;
     },
     todoQueue() {
-      return this.todos.filter((item, index) => index > 1 && index <= 3);
+      return this.todos.filter((item, index) => index > 0 && index < 4);
     },
   },
   methods: {
